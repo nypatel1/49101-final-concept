@@ -1,89 +1,45 @@
-# FixTrack: Transparent Facilities Maintenance for CMU Residents
+# FixTrack — Two-Minute Pitch Talking Points
 
-## Two-Minute Pitch
-
----
-
-### The Problem (0:00 – 0:30)
-
-You submit a maintenance request for a broken heater in your dorm room — it's mid-January in Pittsburgh. You get a confirmation email... and then silence. Days go by. You don't know if anyone has seen your request, if a technician is scheduled, or if the work was actually completed while you were in class. You submit a second request just to be safe. You ask your RA. You call the housing office. Nobody has a clear answer.
-
-This is the reality for thousands of CMU residents every year. Through our customer interviews, we heard the same frustrations over and over:
-
-- **"I had no idea what was happening with my request."**
-- **"I wasn't sure if it was actually fixed — someone just came into my room while I was gone."**
-- **"I submitted the same request three times because I never heard back."**
-
-And it's not just residents who suffer. The Facilities Management Services (FMS) team told us they often receive vague or incomplete requests, making it harder to diagnose problems, bring the right tools, and resolve tickets efficiently. The lack of structured information flowing *in* is just as costly as the lack of communication flowing *out*.
+> Single-slide presentation. Use these bullet-point notes to guide what you say for each section of the slide.
 
 ---
 
-### The Insight (0:30 – 0:50)
+## Problem
 
-This is a communication problem that has already been solved — just in a different industry.
+- Residents submit a maintenance request and then hear nothing — no status, no timeline, no confirmation it was done
+- Customer interviews surfaced this repeatedly: students resubmit tickets, call housing, ask RAs — all because there's zero visibility
+- FMS side has the inverse problem: requests come in vague and incomplete, so technicians show up without the right context to resolve the issue efficiently
+- Both sides lose — residents feel ignored, FMS wastes time on back-and-forth and duplicate tickets
 
-Think about the last time you ordered a package. FedEx and UPS don't just tell you "it's on the way." They show you every stage: **label created, in transit, out for delivery, delivered** — complete with an estimated delivery date and a photo of the package at your door.
+## Insight
 
-That model of **active, stage-based communication with visual confirmation** is exactly what maintenance requests need.
+- This is a solved problem in package delivery — FedEx/UPS show every stage (label created, in transit, out for delivery, delivered), an expected delivery date, and a photo on arrival
+- Maintenance requests follow the same lifecycle; they just lack the communication layer
 
----
+## Solution — FixTrack
 
-### The Solution: FixTrack (0:50 – 1:30)
+- A tracking and notification layer that integrates into CMU's existing maintenance request web app
+- **Stage-based tracking** — requests move through visible stages: Submitted, Under Review, Scheduled, In Progress, Completed — with an estimated resolution date
+- **Photo confirmation** — technician captures a photo of the finished work, attached to the closed request so the resident has proof even if they weren't present
+- **Proactive notifications** — residents get notified at every stage change (e.g., "Scheduled for Thursday 2–4 PM," "Technician on the way," "Completed — view photo")
 
-**FixTrack** is a transparent maintenance tracking layer designed to integrate directly into CMU's existing web-based request system. It introduces three core capabilities:
+## Why It Works
 
-#### 1. Live Request Tracking with Stage Visibility
+- Residents get clarity, trust, and peace of mind
+- FMS gets structured information up front — fewer duplicates, fewer follow-up calls, better-prepared technicians
+- Layers on top of what CMU already uses — not a rip-and-replace
 
-Every request moves through clear, visible stages — just like a package:
+## Ask / Next Step
 
-| Stage | Description |
-|---|---|
-| **Submitted** | Request received and logged |
-| **Under Review** | FMS staff is evaluating the issue |
-| **Scheduled** | A technician and time window are assigned |
-| **In Progress** | Work is actively being performed |
-| **Completed** | Work is finished, with photo confirmation |
-
-Residents see exactly where their request stands at all times, along with an **estimated resolution date** that updates as the request progresses.
-
-#### 2. Photo Confirmation on Completion
-
-When a technician finishes a job, they take a photo of the completed work — a repaired heater, a replaced light fixture, a patched wall. That photo is attached to the request and visible to the resident. This provides **proof of completion**, builds trust, and eliminates the "did someone actually come?" uncertainty — especially for work done while residents are away.
-
-#### 3. Proactive Notifications
-
-Residents receive push or email notifications at every stage transition:
-
-- *"Your request has been scheduled for Thursday, 2–4 PM."*
-- *"A technician is on the way to your room."*
-- *"Your request has been completed. View the photo."*
-
-No more checking a portal and hoping for updates. The system comes to you.
+- Building a working prototype to demonstrate the tracking flow, notification triggers, and photo-confirmation workflow
+- Goal: integrate into the existing CMU maintenance web app
 
 ---
 
-### Why This Works (1:30 – 1:50)
+## Q&A Prep
 
-**For residents**, FixTrack removes anxiety and uncertainty. You always know what's happening, when to expect resolution, and whether the job was done right.
-
-**For FMS staff**, structured request stages and richer intake information mean fewer duplicate tickets, fewer follow-up calls, and better-prepared technicians arriving on site.
-
-**For CMU Housing**, this is a measurable improvement in resident satisfaction and operational efficiency — built to layer on top of the systems already in place, not replace them.
-
----
-
-### The Ask (1:50 – 2:00)
-
-We are building FixTrack as a concept integration for the current CMU maintenance request web app. Our next step is a working prototype that demonstrates the tracking flow, notification triggers, and photo-confirmation workflow.
-
-We're here to turn a frustrating black box into a window — so that no CMU student has to wonder whether anyone heard them.
-
----
-
-## Appendix: Key Talking Points for Q&A
-
-- **Integration, not replacement.** FixTrack is designed as a layer on top of the existing system. It does not require FMS to adopt an entirely new platform.
-- **Low friction for technicians.** The photo confirmation step takes seconds on a mobile device — similar to how delivery drivers already operate.
-- **Scalable model.** The stage-based tracking pattern is proven at massive scale (FedEx, UPS, Amazon, DoorDash). Adapting it to facilities management is a natural fit.
-- **Privacy-conscious.** Photos are of the *completed work*, not of residents' personal spaces beyond what is necessary. Residents control visibility.
-- **Customer-interview-driven.** Every feature maps directly to pain points we heard from real CMU residents and FMS staff during our research.
+- **Integration path** — designed as an add-on layer, not a new platform FMS has to adopt
+- **Technician effort** — photo step takes seconds on a phone, same as a delivery driver
+- **Proven pattern** — stage-based tracking works at massive scale (FedEx, UPS, Amazon, DoorDash)
+- **Privacy** — photos capture the completed work, not the resident's space; residents control visibility
+- **Grounded in research** — every feature traces back to specific pain points from our customer interviews
