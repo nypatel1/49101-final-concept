@@ -5,9 +5,11 @@ import { RequestList } from './pages/RequestList';
 import { RequestDetail } from './pages/RequestDetail';
 import { NewRequest } from './pages/NewRequest';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Dashboard />} />
