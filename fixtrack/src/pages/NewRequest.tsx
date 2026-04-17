@@ -57,7 +57,7 @@ export function NewRequest() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const id = `REQ-2024-${String(Math.floor(Math.random() * 900) + 100)}`;
+    const id = `REQ-2026-${String(Math.floor(Math.random() * 900) + 100)}`;
     const now = new Date().toISOString();
 
     const newRequest: MaintenanceRequest = {
