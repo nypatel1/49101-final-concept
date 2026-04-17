@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cmu-red: #c41230;
+  --color-cmu-red-dark: #a00e28;
+  --color-cmu-gray: #6d6e71;
+  --color-cmu-dark: #1a1a2e;
+  --color-cmu-light: #f8f9fc;
+  --color-stage-submitted: #6366f1;
+  --color-stage-review: #f59e0b;
+  --color-stage-scheduled: #3b82f6;
+  --color-stage-progress: #8b5cf6;
+  --color-stage-completed: #10b981;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cmu-light);
+}
