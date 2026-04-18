@@ -6,6 +6,7 @@ import {
   Wrench,
 } from 'lucide-react';
 import { NotificationBell } from './NotificationBell';
+import { FeedbackButton } from './FeedbackButton';
 
 const navItems = [
   { to: '/', label: 'Dashboard', icon: Home },
@@ -99,6 +100,8 @@ export function Layout() {
       <footer className="border-t border-gray-200 bg-white py-4 text-center text-xs text-gray-400">
         FixTrack Prototype &middot; Carnegie Mellon University &middot; 49-101 Concept
       </footer>
+
+      <FeedbackButton />
     </div>
   );
 }
